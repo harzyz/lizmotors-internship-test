@@ -28,37 +28,37 @@ const External = () => {
       crate: '72%',
     },
     {
-      // id: 2,
+      id: 2,
       label: "Interview",
-      // reviews: '467',
-      // positive: '201',
-      // prate: '59%',
-      // negative: '201',
-      // nrate: '41%',
-      // comments: '201',
-      // crate: '72%',
+      reviews: '467',
+      positive: '201',
+      prate: '59%',
+      negative: '201',
+      nrate: '41%',
+      comments: '201',
+      crate: '72%',
     },
     {
-      // id: 3,
+      id: 3,
       label: "Public Data",
-      // reviews: '467',
-      // positive: '201',
-      // prate: '82%',
-      // negative: '201',
-      // nrate: '18%',
-      // comments: '201',
-      // crate: '62%',
+      reviews: '467',
+      positive: '201',
+      prate: '82%',
+      negative: '201',
+      nrate: '18%',
+      comments: '201',
+      crate: '62%',
     },
     {
-      // id: 4,
+      id: 4,
       label: "Health",
-      // reviews: '467',
-      // positive: '201',
-      // prate: '62%',
-      // negative: '201',
-      // nrate: '58%',
-      // comments: '201',
-      // crate: '32%',
+      reviews: '467',
+      positive: '201',
+      prate: '62%',
+      negative: '201',
+      nrate: '58%',
+      comments: '201',
+      crate: '32%',
     },
   ];
   return (
@@ -70,7 +70,7 @@ const External = () => {
       {ExternalItems.map((item) => (
         <div className={styles.display_hover} key={item.label }>
           <Box bgColor={'#2A4494'} onMouseEnter={() => onHover(item.id)} onMouseLeave={outHover}>{item.label}</Box>
-          {item.id === hover && <Hover reviews={item.reviews} positive={item.positive} negative={item.negative} comments={item.comments} prate={item.prate} nrate={item.nrate} crate={item.crate}  />}
+          {item.id === hover && <Hover reviews={item.reviews} positive={item.positive} negative={item.negative} comments={item.comments} prate={item.prate} nrate={item.nrate} crate={item.crate} />}
           
         </div>
       ))}

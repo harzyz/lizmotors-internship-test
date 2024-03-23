@@ -5,8 +5,10 @@ import { FaClipboardList } from "react-icons/fa";
 import { IoIosColorPalette } from "react-icons/io";
 import { MdEngineering } from "react-icons/md";
 import { FaSackDollar } from "react-icons/fa6";
+import { useState } from "react";
 
 const Sidebar = () => {
+  const [active, setActive] = useState(0)
   const phasesData = [
     {
       id: 1,
@@ -46,10 +48,10 @@ const Sidebar = () => {
   ];
   return (
     <aside className={styles.sidebar}>
-      <Link to='/' className={styles.link}><h1>Liz Motors</h1></Link>
+      <Link onClick={() => setActive(0)} to='/' className={styles.link}><h1>LIZ MOTORS</h1></Link>
       {phasesData.map((item) => (
-        <Link className={styles.link} to={item.route}>
-          <div className={styles.sidebar_item} key={item.id}>
+        <Link key={item.id} className={styles.link} to={item.route}>
+          <div onClick={() => setActive(item.id)} className={`${styles.sidebar_item} ${item.id === active ? styles.sidebar_item1 : styles.sidebar_item }`} key={item.id}>
             {item.icon}
             <span>{item.name}</span>
           </div>
