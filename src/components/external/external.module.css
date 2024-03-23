@@ -23,7 +23,7 @@
   .display_hover{
     height: 100%;
     width: 100%;
-    gap: 30px;
+    gap: 15px;
     position: relative;
   }
 }
