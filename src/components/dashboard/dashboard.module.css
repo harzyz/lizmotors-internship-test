@@ -33,11 +33,20 @@
   }
   .content{
     flex-grow: 1;
-    padding: 20px 0;
+    padding: 0 0 20px 0;
   }
   .header{
     display: block;
     text-align: center;
     margin: 0;
+  }
+  .topbar{
+    width: 100%;
+    height: 80px;
+    background-color: #2A4494;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

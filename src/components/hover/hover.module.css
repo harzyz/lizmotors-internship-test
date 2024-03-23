@@ -1,12 +1,13 @@
 .wrapper{
   width: 200px;
   height: 200px;
-  border: 1px solid #ff0000;
+  border: 1px solid yellowgreen;
   border-radius: 8px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 5px;
+
 }
 .bar{
   width: 80%;
@@ -22,4 +23,14 @@
   width: 50%;
   height: 20px;
   background-color: aqua;
+}
+@media screen and (max-width: 700px) {
+  .wrapper{
+    position: absolute;
+    top: 0;
+    background-color: #FFF;
+    font-size: 9px;
+    height: 100px;
+    line-height: 9px;
+  }
 }

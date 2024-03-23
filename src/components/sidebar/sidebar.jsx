@@ -48,7 +48,7 @@ const Sidebar = () => {
   ];
   return (
     <aside className={styles.sidebar}>
-      <Link onClick={() => setActive(0)} to='/' className={styles.link}><h1>LIZ MOTORS</h1></Link>
+      <Link onClick={() => setActive(0)} to='/' className={styles.link}><h1>LIZMOTORS</h1></Link>
       {phasesData.map((item) => (
         <Link key={item.id} className={styles.link} to={item.route}>
           <div onClick={() => setActive(item.id)} className={`${styles.sidebar_item} ${item.id === active ? styles.sidebar_item1 : styles.sidebar_item }`} key={item.id}>

@@ -24,6 +24,7 @@
   .wrapper{
     flex-direction: column;
     align-items: center;
+    height: 80%;
   }
   .internal{
     height: 50%;
