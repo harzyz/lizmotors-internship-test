@@ -56,7 +56,13 @@
   .sidebar_item span{
     display: none;
   }
+  .sidebar_item1 span{
+    display: none;
+  }
   .sidebar_item{
+    padding: 15px
+  }
+  .sidebar_item1{
     padding: 15px
   }
   .sidebar h1{
