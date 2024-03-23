@@ -1,24 +1,97 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from "./components/dashboard/dashboard";
+import Design from "./components/design/design";
+import Market from "./components/market/market";
+import Planning from "./components/planning/planning";
+import Manufacturing from "./components/manufacturing/manufacturing";
+import Sales from "./components/sales/sales";
+import External from "./components/external/external";
+import "./index.css";
 
 function App() {
+  // const [activePhase, setActivePhase] = useState(null);
+
+  // const phasesData = [
+  //   {
+  //     name: 'Market Research',
+  //     details: 'Details about Market Research...',
+  //     // Include more details and subphases as needed
+  //   },
+  //   {
+  //     name: 'Planning',
+  //     details: 'Details about Planning...',
+  //   },
+  //   {
+  //     name: 'Desiging',
+  //     details: 'Details about Planning...',
+  //   },
+  //   {
+  //     name: 'Manufacturing',
+  //     details: 'Details about Planning...',
+  //   },
+  //   {
+  //     name: 'Sales/Marketing',
+  //     details: 'Details about Planning...',
+  //   },
+  //   // ... other phases
+  // ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" exact element={<Dashboard />} />
+          <Route
+            path="/market"
+            element={
+              <Dashboard>
+                <Market />
+              </Dashboard>
+            }
+          />
+          <Route
+            path="/planning"
+            element={
+              <Dashboard>
+                <Planning />
+              </Dashboard>
+            }
+          />
+          <Route
+            path="/design"
+            element={
+              <Dashboard>
+                <Design />
+              </Dashboard>
+            }
+          />
+          <Route
+            path="/manufacturing"
+            element={
+              <Dashboard>
+                <Manufacturing />
+              </Dashboard>
+            }
+          />
+          <Route
+            path="/sales"
+            element={
+              <Dashboard>
+                <Sales />
+              </Dashboard>
+            }
+          />
+          <Route
+            path="/market/b2c"
+            element={
+              <Dashboard>
+                <External />
+              </Dashboard>
+            }
+          />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

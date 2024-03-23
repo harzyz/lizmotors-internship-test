@@ -1,0 +1,25 @@
+.wrapper{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ff0000;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.bar{
+  width: 80%;
+  height: 20px;
+  background-color: aqua;
+}
+.bar2{
+  width: 60%;
+  height: 20px;
+  background-color: aqua;
+}
+.bar3{
+  width: 50%;
+  height: 20px;
+  background-color: aqua;
+}
