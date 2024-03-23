@@ -8,8 +8,23 @@
   height: 100%;
   padding: 80px 0;
 }
+.sidebar{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: fit fit-content;
+  height: 100%;
+}
 @media screen and (max-width: 700px) {
   .wrapper{
     flex-direction: column-reverse;
+  }
+  .sidebar{
+    bottom: 0;
+    top: unset;
+    height: 50px;
+  }
+  .content{
+    flex-grow: 1;
   }
 }

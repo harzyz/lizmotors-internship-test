@@ -1,6 +1,9 @@
 import { useState } from "react";
 import styles from "./external.module.css";
 import Hover from "../hover/hover";
+import { motion } from "framer-motion";
+import Box from "../box/box";
+
 
 const External = () => {
   const [hover, setHover] = useState(0);
@@ -59,17 +62,21 @@ const External = () => {
     },
   ];
   return (
-    <div className={styles.wrapper}>
+    <motion.div
+      className={styles.wrapper}
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.5 }}>
       {ExternalItems.map((item) => (
         <div className={styles.display_hover} key={item.label }>
-          <h1 onMouseEnter={() => onHover(item.id)} onMouseLeave={outHover}>{item.label}</h1>
+          <Box bgColor={'#2A4494'} onMouseEnter={() => onHover(item.id)} onMouseLeave={outHover}>{item.label}</Box>
           {item.id === hover && <Hover reviews={item.reviews} positive={item.positive} negative={item.negative} comments={item.comments} prate={item.prate} nrate={item.nrate} crate={item.crate}  />}
           
         </div>
       ))}
 
       
-    </div>
+    </motion.div>
   );
 };
 

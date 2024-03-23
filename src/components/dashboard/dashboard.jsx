@@ -4,7 +4,7 @@ import styles from './dashboard.module.css'
 const Dashboard = ({children}) => {
   return (
     <main className={styles.wrapper}>
-      <div>
+      <div className={styles.sidebar}>
         <Sidebar />
       </div>
       <div className={styles.content}>

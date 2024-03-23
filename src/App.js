@@ -7,6 +7,7 @@ import Manufacturing from "./components/manufacturing/manufacturing";
 import Sales from "./components/sales/sales";
 import External from "./components/external/external";
 import "./index.css";
+import Homepage from "./components/homepage/homepage";
 
 function App() {
   // const [activePhase, setActivePhase] = useState(null);
@@ -40,7 +41,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" exact element={<Dashboard />} />
+          <Route path="/" exact element={<Dashboard><Homepage /></Dashboard>} />
           <Route
             path="/market"
             element={
