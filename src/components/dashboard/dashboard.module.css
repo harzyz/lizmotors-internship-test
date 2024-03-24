@@ -8,6 +8,9 @@
   height: 100%;
   padding: 80px 0;
 }
+.topbar{
+  display: none;
+}
 .sidebar{
   position: sticky;
   top: 0;
@@ -48,6 +51,7 @@
     background-color: #2A4494;
     color: #FFF;
     display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
   }
