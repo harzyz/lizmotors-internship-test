@@ -16,12 +16,12 @@ const Market = () => {
       <div className={styles.internal}>
         <Box bgColor={'#2A4494'}>External</Box>
         <div className={styles.line}></div>
-        <Link className={styles.link} to='/market/b2c'><h2>B2C</h2></Link>
+        <Link className={styles.link} to='/market/b2c'><Box fSize={'15px'} bgColor={'#9acd32'}>B2C</Box></Link>
       </div>
       <div className={styles.internal}>
         <Box bgColor={'#2A4494'}>Internal</Box>
         <div className={styles.line}></div>
-        <h2 onClick={()=> {setShow(!show)}}>B2B</h2>
+        <Box fSize={'15px'} bgColor={'#9acd32'} onClick={()=> {setShow(!show)}}>B2B</Box>
         {show && <h3>Business to Business</h3>}
       </div>
     </motion.div>

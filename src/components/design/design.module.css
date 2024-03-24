@@ -6,9 +6,18 @@
 .wrapper div{
   width: 50%;
   display: flex;
-  height: 100%;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  height: 100%;
+}
+.sales{
+  width: 250px;
+  text-align: center;
+  border: 1px solid #E96343;
+  padding: 10px;
+  border-radius: 8px;
+  color: #E96343;
 }
 @media screen and (max-width: 700px) {
   .wrapper{
@@ -19,5 +28,10 @@
   .wrapper div{
     height: 50%;
     width: 100%;
+    gap: 20px;
+    padding-top: 20px;
+  }
+  .sales{
+    font-size: 10px;
   }
 }
