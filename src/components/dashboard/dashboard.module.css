@@ -30,6 +30,7 @@
     bottom: 0;
     top: unset;
     height: 50px;
+    width: 100%;
   }
   .content{
     flex-grow: 1;
