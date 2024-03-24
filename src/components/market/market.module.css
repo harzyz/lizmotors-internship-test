@@ -8,8 +8,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   height: 100%;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .line{
   border: 1px solid red;
@@ -20,6 +21,42 @@
   text-decoration: none;
   color: inherit;
 }
+.sales{
+  width: 250px;
+  text-align: center;
+  border: 1px solid #A684EB;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  color: #A684EB;
+}
+.b2b{
+  width: 250px;
+  text-align: center;
+  border: 1px solid #A684EB;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  color: #A684EB;
+  position: absolute;
+  top: 100px;
+  background-color: #FFF;
+}
+.external{
+  display: flex;
+  gap: 60px;
+}
+.external_phase{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.external_phasee{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media screen and (max-width: 700px) {
   .wrapper{
     flex-direction: column;
@@ -29,5 +66,22 @@
   .internal{
     height: 50%;
     width: 100%;
+    padding-top: 20px;
+  }
+  .sales{
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    background-color: #FFF;
+  }
+  .external{
+    gap: 38px;
+  }
+  .b2b{
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    background-color: #FFF;
+    right: -30px;
   }
 }

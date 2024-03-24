@@ -26,7 +26,7 @@ const Sidebar = () => {
     },
     {
       id: 3,
-      name: "Desiging",
+      name: "Design",
       details: "Details about Planning...",
       route: '/design',
       icon: <IoIosColorPalette size={25} />

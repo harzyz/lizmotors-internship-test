@@ -30,35 +30,17 @@ const External = () => {
     {
       id: 2,
       label: "Interview",
-      reviews: '467',
-      positive: '201',
-      prate: '59%',
-      negative: '201',
-      nrate: '41%',
-      comments: '201',
-      crate: '72%',
+      details: 'Interview: Conducting face-to-face or remote interviews with potential customers to gather insights and opinions about the product.'
     },
     {
       id: 3,
       label: "Public Data",
-      reviews: '467',
-      positive: '201',
-      prate: '82%',
-      negative: '201',
-      nrate: '18%',
-      comments: '201',
-      crate: '62%',
+      details: 'Public Data: Analyzing publicly available data from sources like government reports, industry publications, and market research reports.'
     },
     {
       id: 4,
       label: "Health",
-      reviews: '467',
-      positive: '201',
-      prate: '62%',
-      negative: '201',
-      nrate: '58%',
-      comments: '201',
-      crate: '32%',
+      details: 'Health: Considering health-related data and trends that could impact consumer preferences, such as safety features or environmental impact.'
     },
   ];
   return (
@@ -70,7 +52,7 @@ const External = () => {
       {ExternalItems.map((item) => (
         <div className={styles.display_hover} key={item.label }>
           <Box bgColor={'#2A4494'} onMouseEnter={() => onHover(item.id)} onMouseLeave={outHover}>{item.label}</Box>
-          {item.id === hover && <Hover className={styles.trial} reviews={item.reviews} positive={item.positive} negative={item.negative} comments={item.comments} prate={item.prate} nrate={item.nrate} crate={item.crate} />}
+          {item.id === hover && <Hover className={styles.trial} reviews={item.reviews} positive={item.positive} negative={item.negative} comments={item.comments} prate={item.prate} nrate={item.nrate} crate={item.crate} details={item.details} />}
         </div>
       ))}
 
