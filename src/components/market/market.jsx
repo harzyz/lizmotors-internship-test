@@ -39,12 +39,11 @@ const Market = () => {
               B2B
             </Box>
             {true === show1 && (
-              <h3 className={styles.b2b}>
+              <span className={styles.b2b}>
                 B2B (Business-to-Business): Commerce between businesses,
                 involving transactions of products, services, or information for
-                mutual benefit. B2B focuses on providing goods and services
-                directly to other businesses rather than consumers.
-              </h3>
+                mutual benefit.
+              </span>
             )}
           </div>
         </div>
@@ -61,13 +60,11 @@ const Market = () => {
           Internal
         </Box>
         {true === show && (
-          <h3 className={styles.sales}>
+          <span className={styles.sales}>
             Internal Market Research: Gathering data and insights within the
             company, such as sales figures and customer feedback, to inform
-            decision-making. Internal market research focuses on analyzing data
-            within the organization to understand market trends and customer
-            preferences.
-          </h3>
+            decision-making.
+          </span>
         )}
       </div>
     </motion.div>
