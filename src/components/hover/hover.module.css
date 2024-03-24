@@ -1,10 +1,8 @@
 .wrapper{
   width: 200px;
-  /* height: 200px; */
   border: 1px solid #9acd32;
   border-radius: 8px;
   padding: 10px;
-
   height: fit-content;
 }
 .reviews{
@@ -14,31 +12,30 @@
   flex-direction: column;
   gap: 5px;
 }
+.details{
+  text-align: center;
+}
 .bar{
   width: 80%;
   height: 20px;
   background-color: aqua;
 }
-.bar2{
-  width: 60%;
-  height: 20px;
-  background-color: aqua;
-}
-.bar3{
-  width: 50%;
-  height: 20px;
-  background-color: aqua;
-}
 @media screen and (max-width: 700px) {
   .wrapper{
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; */
     background-color: #FFF;
-    height: 100px;
+    height: fit-content;
+    z-index: 5;
+    width: 130px;
+    padding: 5px;
+  }
+  .bar{
+    height: 10px;
   }
   .reviews{
-    font-size: 9px;
-    line-height: 9px;
+    font-size: 12px;
+    line-height: 12px;
   }
   .details{
     font-size: 13px;
