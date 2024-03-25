@@ -61,8 +61,7 @@
   .wrapper{
     flex-direction: column;
     align-items: center;
-    height: 90%;
-    background-color: red;
+    height: 88%;
   }
   .internal{
     height: 50%;
